@@ -1,0 +1,98 @@
+SRS(Software requirement specification) document
+
+Title- SRS document for hospital managenent system 
+
+Team-
+	Doctor, medical staff, Admin, Director, Pharma reprersentative, cleaning staff, maintainance staff, laboratory staff
+
+Objective (Purpose) :
+	System will present dashboard for admin,reception,doctor,maintenance department.
+
+Scope :
+	This system will allow hospital staff to manage patients info, staff duties 
+	and shifts, maintain personal details and medical records of patients, staff
+	availabilty and attendance, periodic maintainance activty of medical equipment.
+
+Definations :
+	HMS - hospital management system 
+	OT - operation theater
+	OPD - Out Patient Department
+	IPD - In Patient Department
+	ICU - intensive care unit
+
+Functional Requirements :
+	(Automated management system)
+	(functionalities)
+
+	Selected staff members will able to check availabilty of doctor and all other operational staff and equipments.
+
+	Reception staff will be able to admit or register new paitent and fetch detail of old patients.	
+
+	Admin staff will be able to access will able to assign duties to all staff(Except Admin) manage their attendance and leaves, add and remove staff members..
+	and will have access to billing module, they will also manage salaries, details and bill payments. 
+	Admin will assign roles repsonsibilities and access of application modules to the staff.
+
+	Medical staff and doctors will have have access to medical records of patients.
+
+	Maintainance staff will have access to only medical equipment information.
+
+	Director will have access to every module of the application.
+
+	Pharma representative will have access to prescriptions of the patients.
+
+	Laboratary staff will have acess to test details and reports.
+	
+Non- Functional Requirements :
+
+	Security:
+		HMS will internally maintain secure communiction channel between Servers (App Servers, database Server)
+		Sensitive data will be always encrypted across communcation.
+		Use proper firewall to protect servers from out side fishing, vulnerable attacks.
+	
+	Reliability:
+		The system will backup business data on regular basis and recover in short time duration to keep system operational
+		Continous updates are matained , continous Adminstration is done to keep system operational.
+
+	Availability:
+		uptime:   24* 7  available
+	 	99.999%
+
+	Maintainability:
+		A Commercial database software will be used to maintain System data Persistence.
+		IT operations team will easily monitor and configure System using Adminstrative tools provided by Servers.
+		Separate enviornment will be maintained for OSS for isolation in  production, testing, and development.
+
+	Accessibility:
+		Staff will be able to access their respective role data from the application after authentication.
+		Director will be able to view daily, weekly, monthly, annual business data .
+
+	Durability:
+		System will maintain records of patients. staff  will be able to admit patient whenever needed.
+        	 System will implement backup and recovery for hospital data.
+
+	Modularity:
+		HMS will be designed and developed using reusable, independent or dependent business senarios in the form of modules.
+        	These modules will be loosely coupled and highly cohesive. (divide and Rule)
+		System will contain patient deatil module, staff details module, maintainance module, ward managemnt module, pharma module
+		lab management, roles management module.
+
+	Safety:
+		Bussiness data will be backed up periodically to ensure safty of data using increamental back up strategy.
+		Role based security will be applied for Application data and operations accessibility.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
